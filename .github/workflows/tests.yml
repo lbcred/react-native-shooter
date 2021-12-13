@@ -14,10 +14,10 @@ jobs:
           node-version: 17.x
 
       - name: Install Dependencies
-      - run: yarn install
+        run: yarn install
 
       - name: Run Tests
-      - run: yarn test
+        run: yarn test
 
   lint-files:
     name: Lint files
@@ -32,7 +32,7 @@ jobs:
           node-version: 17.x
 
       - name: Install Dependencies
-      - run: yarn install
+        run: yarn install
 
       - name: Run eslint
-      - run: yarn lint
+        run: yarn lint
