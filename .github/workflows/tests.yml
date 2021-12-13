@@ -1,0 +1,38 @@
+name: Run tests and lint
+on: [push]
+jobs:
+  run-tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17.x
+
+      - name: Install Dependencies
+      - run: yarn install
+
+      - name: Run Tests
+      - run: yarn test
+
+  lint-files:
+    name: Lint files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17.x
+
+      - name: Install Dependencies
+      - run: yarn install
+
+      - name: Run eslint
+      - run: yarn lint
