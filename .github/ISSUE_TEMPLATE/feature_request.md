@@ -7,31 +7,31 @@ assignees: lbcred
 
 ---
 
-#Description 
+### Description 
 
 Brief description of the feature/change.
 
-#Demo
+### Demo
 
 Given ...
 When ...
 Then ...
 
-#User Story
+### User Story
 
 As a user ...
 
 So that ...
 
-#Acceptance Criteria
+### Acceptance Criteria
 
 AC1: ...
 
 AC2: ...
 
-#Dependencies (Optional):
+### Dependencies (Optional):
 Other issues this one will be dependent on.
 Or other dependencies.
 
-#Additional context
+### Additional context
 Add any other context or screenshots about the feature request here.
